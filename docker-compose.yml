@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  root-config:
+    build:
+      context: ./root-config
+      dockerfile: Dockerfile
+    ports:
+    - "5000:80"
+  sidebar:
+    build:
+      context: ./sidebar
+      dockerfile: Dockerfile
+    ports:
+    - "5001:80"
+  main:
+    build:
+      context: ./main
+      dockerfile: Dockerfile
+    ports:
+    - "5002:80"
+  friends-activity:
+    build:
+      context: ./friends-activity
+      dockerfile: Dockerfile
+    ports:
+    - "5003:80"
+  player:
+    build:
+      context: ./player
+      dockerfile: Dockerfile
+    ports:
+    - "5004:80"
