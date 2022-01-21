@@ -17,13 +17,22 @@
 
   -->
 
-  <main>
-    <route default>
-      <application name="@rinzler/sidebar"></application>
-      <application name="@rinzler/main"></application>
-      <application name="@rinzler/friends-activity"></application>
-      <application name="@rinzler/player"></application>
+  <style>
+    #main-wrapper {
+      display: grid;
+      grid-template-columns: 300px 1fr 300px;
+      padding-bottom: 80px;
+      height: 100%;
+      gap: 20px;
+    }
+  </style>
 
-    </route>
-  </main>
+  <route default>
+    <main id="main-wrapper">
+      <application name="@rinzler/sidebar"></application>
+      <application name="@rinzler/main" id="main"></application>
+      <application name="@rinzler/friends-activity"></application>
+    </main>
+    <application name="@rinzler/player"></application>
+  </route>
 </single-spa-router>

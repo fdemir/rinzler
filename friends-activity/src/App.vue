@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     {{name}} is mounted!
-  </div>
+  </main>
 </template>
 
 <script>
@@ -11,3 +11,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+main {
+  border: 2px dashed #1864ab;
+  height: 100%;
+}
+</style>

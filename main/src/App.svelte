@@ -3,9 +3,11 @@
 </script>
 
 <style>
-  section {
-    font-size: 1.5rem;
-  }
+main {
+  border: 2px dashed #e67700;
+  stroke-dashoffset: 20px;
+  height: 100%;
+}
 </style>
 
-<section>{name} is mounted!</section>
+<main>{name} is mounted!</main>

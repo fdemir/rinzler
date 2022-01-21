@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Root Config</title>
-
+  
   <!--
     Remove this if you only support browsers that support async/await.
     This is needed by babel to share largeish helper code for compiling async/await in older
@@ -53,7 +53,8 @@
         "@rinzler/sidebar": "//localhost:5001/rinzler-sidebar.js",
         "@rinzler/main": "//localhost:5002/rinzler-main.js",
         "@rinzler/friends-activity": "//localhost:5003/js/app.js",
-        "@rinzler/player": "//localhost:5004/rinzler-player.js"
+        "@rinzler/player": "//localhost:5004/rinzler-player.js",
+        "@rinzler/styleguide": "//localhost:5005/rinzler-styleguide.js"
       }
     }
   </script>
@@ -84,6 +85,7 @@
     System.import('@rinzler/main');
     System.import('@rinzler/friends-activity');
     System.import('@rinzler/player');
+    System.import('@rinzler/styleguide');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>

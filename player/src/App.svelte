@@ -3,9 +3,16 @@
 </script>
 
 <style>
-  section {
-    font-size: 1.5rem;
+  .player {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100vw;
+    border: 3px dashed #2b8a3e;
   }
 </style>
 
-<section>{name} is mounted!</section>
+<div class="player">
+  {name} is mounted!
+</div>
