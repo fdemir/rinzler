@@ -1,0 +1,21 @@
+:root {
+    --color-primary: #1DB954;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: var(--color-white);
+    background: var(--color-black);
+}
